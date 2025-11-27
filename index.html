@@ -15,8 +15,6 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>School Club Information</title>
@@ -25,20 +23,23 @@
 
 <div class="container mt-5">
     <h2>School Club Information</h2>
-        <div class="dropdown"> 
-            <button type="submit" class="form-control btn btn-danger" id="clubinfo" py-click="club_info">Select Club Information</button>
-            <div class="form-control dropdown-content">
-                <a href="#" id="CA">Communication Arts</a>
-                <a href="#" id="MB">Marching Band</a>
-                <a href="#" id="MO">Monarchs</a>
-                <a href="#" id="RC">Rainbow Catering</a>
-                <a href="#" id="CO">COCC</a>
-            </div>
-        </div>
+       <select id="club_select" class="form-control">
+                <option value="">-- Select Club Information --</option>
+                <option value="CA">Communication Arts</option>
+                <option value="MB">Marching Band</option>
+                <option value="MO">Monarchs</option>
+                <option value="RC">Rainbow Catering</option>
+                <option value="CO">COCC</option>
+            </select>
+    <h2 class="header mt-3">Club Info:</h2>
+    <div id="output">
+        
+    </div>
     <div id="output"></div>
 </div>
 
-<script type="py" src="main.py"></script>
+<py-script src="main.py"></py-script>
     
 </body>
+
 </html>
