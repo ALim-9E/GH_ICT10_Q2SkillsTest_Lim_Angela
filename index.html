@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- PyScript Integration -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+    <!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>School Club Information</title>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2>School Club Information</h2>
+        <div class="dropdown"> 
+            <button type="submit" class="form-control btn btn-danger" id="clubinfo" py-click="club_info">Select Club Information</button>
+            <div class="form-control dropdown-content">
+                <a href="#" id="CA">Communication Arts</a>
+                <a href="#" id="MB">Marching Band</a>
+                <a href="#" id="MO">Monarchs</a>
+                <a href="#" id="RC">Rainbow Catering</a>
+                <a href="#" id="CO">COCC</a>
+            </div>
+        </div>
+    <div id="output"></div>
+</div>
+
+<script type="py" src="main.py"></script>
+    
+</body>
+</html>
